@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陈天元 | Research</title>
+  <meta name="description" content="陈天元硕士论文研究：基于知识蒸馏的牙科选择题自动答题系统，覆盖 Choice-Head、多教师蒸馏与全量测试验证。">
+  <meta property="og:title" content="陈天元 | Research">
+  <meta property="og:description" content="CMExam 医学选择题研究平台，14B 学生模型在 991 题测试集达到 89.10%。">
+  <meta property="og:type" content="article">
+  <meta name="twitter:title" content="陈天元 | Research">
+  <meta name="twitter:description" content="硕士论文研究：知识蒸馏、Choice-Head 方法、多教师实验与大测试集稳定验证。">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body data-page="research">
+  <nav class="site-nav">
+    <div class="shell nav-shell">
+      <a class="brand" href="index.html">CV</a>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="career.html" data-nav="career">Career</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="about.html" data-nav="about">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-banner research-banner">
+    <div class="shell reveal">
+      <p class="eyebrow">Master Thesis Research</p>
+      <h1>基于知识蒸馏的牙科选择题自动答题系统</h1>
+      <p class="lead narrow">30 秒结论：我围绕 CMExam 医学选择题构建了一个可复现实验平台，用 Choice-Head 等方法把 14B 学生模型推到 89.10%，并在更大测试集上验证了结果稳定性。</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block section-plain">
+      <div class="shell highlight-row research-intro">
+        <article class="feature-card reveal">
+          <p class="card-kicker">30-Second Brief</p>
+          <h2>这项研究解决什么问题，最后做出了什么</h2>
+          <p>目标是把大型教师模型的医学答题能力迁移到更可部署的学生模型。我搭建了一个模块化研究平台，系统比较教师质量、蒸馏方法、学生容量与数据规模，最终在 991 题测试集上把 14B 学生模型做到 89.10%。</p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">GitHub 仓库</a>
+            <a class="button button-secondary" href="projects.html">查看 Projects</a>
+          </div>
+        </article>
+        <article class="feature-card reveal compact-card">
+          <p class="card-kicker">Why It Matters</p>
+          <ul class="fact-list compact">
+            <li>不是“做过论文”，而是做过完整实验平台</li>
+            <li>能把问题拆成方法、评估和结论三层</li>
+            <li>结果不仅有峰值，还有大测试集稳定验证</li>
+            <li>研究产出可以直接映射到 AI PM / 技术方案岗位</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block section-accent">
+      <div class="shell metrics-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Fast Facts</p>
+          <h2>面试官最该先记住的四个数字</h2>
+          <p class="section-text">先看结果，再决定是否继续读方法和图表。</p>
+        </div>
+        <div class="metric-grid research-metrics">
+          <article class="metric-card reveal">
+            <strong>89.10%</strong>
+            <span>14B 学生在 991 题全量测试集的最佳准确率</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>88.67%</strong>
+            <span>14B 学生三种子平均准确率</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>17</strong>
+            <span>模块化实验线路，覆盖基线到异构教师蒸馏</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>6591</strong>
+            <span>全量单选题数据重分割实验规模</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-plain">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Method</p>
+          <h2>方法层只保留最值得讲的四步</h2>
+        </div>
+        <div class="matrix-grid research-method-grid">
+          <article class="matrix-card reveal">
+            <h3>先做基线</h3>
+            <p>先建立 GT SFT 基线，保证后续所有提升都有明确对照，不陷入“跑出来了但不知道为什么”。</p>
+          </article>
+          <article class="matrix-card reveal">
+            <h3>再比较蒸馏范式</h3>
+            <p>系统比较白盒 KL、黑盒 Choice-Head、多教师融合和推理链蒸馏，而不是只选一种方法讲故事。</p>
+          </article>
+          <article class="matrix-card reveal">
+            <h3>聚焦 Choice-Head</h3>
+            <p>围绕五选一题型只蒸馏 A/B/C/D/E 的选项分布，把问题限定在任务结构本身，这是研究里最核心也最稳定的方法。</p>
+          </article>
+          <article class="matrix-card reveal">
+            <h3>最后扩大评估</h3>
+            <p>把测试集从 83 题扩到 991 题，验证结果不是小样本波动，确保论文结论在统计上站得住。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-accent">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Findings</p>
+          <h2>三个最值得讲的结论</h2>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-card reveal">
+            <span class="time-range">结论 1</span>
+            <h3>Choice-Head 不是技巧，而是任务结构驱动的方法选择</h3>
+            <p class="timeline-meta">Module 02 / 13 / 15</p>
+            <p>它直接围绕选择题的五个选项做蒸馏，既降低实现与部署复杂度，也比更重的白盒方案更适合这个具体任务。</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="time-range">结论 2</span>
+            <h3>强学生模型继续做 Stage 2，不一定会更好</h3>
+            <p class="timeline-meta">Module 13</p>
+            <p>14B 学生在单阶段蒸馏时峰值达到 84.34%，继续做 GT SFT 反而可能回退，这说明方法设计必须考虑学生自身基线，而不是默认训练越多越好。</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="time-range">结论 3</span>
+            <h3>更大的测试集证明学生模型可以稳定超越教师</h3>
+            <p class="timeline-meta">Module 15</p>
+            <p>14B 学生三种子均值 88.67%，高于教师 87.18%；最佳 89.10%。同时三种子极差只有 0.70pp，说明这个结论不是偶然峰值。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-plain">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Figures</p>
+          <h2>研究路线与结果图</h2>
+        </div>
+        <div class="research-figure-grid">
+          <figure class="figure-frame reveal">
+            <img src="assets/research/fig_2_1_tech_route_overview.png" alt="技术路线总览图">
+            <figcaption>技术路线总览：从基线、蒸馏、容量升级到全量测试验证。</figcaption>
+          </figure>
+          <figure class="figure-frame reveal">
+            <img src="assets/research/fig_3_1_choice_head_pipeline.png" alt="Choice-Head 蒸馏流程图">
+            <figcaption>Choice-Head 流程：将选择题蒸馏约束到 A/B/C/D/E 五个选项分布。</figcaption>
+          </figure>
+          <figure class="figure-frame reveal">
+            <img src="assets/research/fig_4_4_full_data_distill_results.png" alt="全量数据蒸馏结果图">
+            <figcaption>全量数据实验结果：14B 学生在 991 题测试集上达到 89.10%。</figcaption>
+          </figure>
+          <figure class="figure-frame reveal">
+            <img src="assets/research/fig_4_5_overall_ranking.png" alt="整体实验排名图">
+            <figcaption>整体实验排名：帮助快速理解不同模块之间的成绩位置与结论。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <p>CHEN Tianyuan</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="career.html">Career</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">mentalDistill</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+
+</html>
