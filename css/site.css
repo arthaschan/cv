@@ -39,6 +39,10 @@ body {
   overflow-x: hidden;
 }
 
+.mobile-quickbar {
+  display: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -906,6 +910,10 @@ img {
 }
 
 @media (max-width: 720px) {
+  body {
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+
   .shell {
     width: min(var(--max), calc(100% - 28px));
   }
@@ -934,6 +942,7 @@ img {
   .nav-links a {
     font-size: 0.74rem;
     white-space: nowrap;
+    padding: 6px 0 10px;
   }
 
   .hero-home,
@@ -941,7 +950,19 @@ img {
   .career-banner,
   .research-banner,
   .about-banner {
-    padding-top: 64px;
+    padding-top: 52px;
+  }
+
+  .hero-home {
+    padding-bottom: 40px;
+  }
+
+  .hero-grid,
+  .highlight-row,
+  .two-column,
+  .intro-grid,
+  .contact-layout {
+    gap: 18px;
   }
 
   .hero-copy h1,
@@ -951,6 +972,21 @@ img {
   .feature-card h2,
   .project-head h2 {
     line-height: 1.04;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.8rem, 13vw, 4.4rem);
+    margin-top: 14px;
+  }
+
+  .lead {
+    margin-top: 18px;
+    font-size: 0.98rem;
+  }
+
+  .signal-row {
+    margin-top: 18px;
+    gap: 8px;
   }
 
   .section-block {
@@ -1028,6 +1064,45 @@ img {
 
   .button {
     width: 100%;
+    min-height: 52px;
+  }
+
+  .mobile-quickbar {
+    position: fixed;
+    left: 14px;
+    right: 14px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    z-index: 40;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid rgba(214, 186, 123, 0.22);
+    border-radius: 18px;
+    background: rgba(8, 12, 22, 0.92);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+  }
+
+  .mobile-quickbar a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.035);
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .mobile-quickbar a.mobile-quickbar-primary {
+    background: var(--gold-soft);
+    color: var(--bg);
+    border-color: transparent;
   }
 }
 
@@ -1053,7 +1128,7 @@ img {
   }
 
   .lead {
-    font-size: 0.96rem;
+    font-size: 0.94rem;
   }
 
   .signal-pill,
@@ -1063,9 +1138,23 @@ img {
     font-size: 0.68rem;
   }
 
+  .signal-pill {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
   .hero-roman {
     font-size: 0.82rem;
     letter-spacing: 0.16em;
+  }
+
+  .hero-quickfacts {
+    margin-top: 20px;
+  }
+
+  .hero-statbar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .metric-card {
@@ -1094,5 +1183,19 @@ img {
   .case-strip,
   .proof-card {
     border-radius: 18px;
+  }
+
+  .mobile-quickbar {
+    left: 10px;
+    right: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .mobile-quickbar a {
+    min-height: 42px;
+    font-size: 0.72rem;
+    padding: 0 8px;
   }
 }
