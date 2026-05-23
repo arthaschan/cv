@@ -44,8 +44,8 @@
     <section class="section-block section-plain">
       <div class="shell highlight-row research-intro">
         <article class="feature-card reveal">
-          <p class="card-kicker">30-Second Brief</p>
-          <h2>这项研究解决什么问题，最后做出了什么</h2>
+          <p class="card-kicker">Research Summary</p>
+          <h2>研究概览</h2>
           <p>目标是把大型教师模型的医学答题能力迁移到更可部署的学生模型。我搭建了一个模块化研究平台，系统比较教师质量、蒸馏方法、学生容量与数据规模，最终在 991 题测试集上把 14B 学生模型做到 89.10%。</p>
           <div class="cta-row">
             <a class="button button-primary" href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">GitHub 仓库</a>
@@ -55,7 +55,7 @@
         <article class="feature-card reveal compact-card">
           <p class="card-kicker">Why It Matters</p>
           <ul class="fact-list compact">
-            <li>不是“做过论文”，而是做过完整实验平台</li>
+            <li>完成完整实验平台搭建</li>
             <li>能把问题拆成方法、评估和结论三层</li>
             <li>结果不仅有峰值，还有大测试集稳定验证</li>
             <li>研究产出可以直接映射到 AI PM / 技术方案岗位</li>
@@ -69,16 +69,16 @@
         <div class="section-head reveal">
           <p class="eyebrow">Fast Facts</p>
           <h2>面试官最该先记住的四个数字</h2>
-          <p class="section-text">先看结果，再决定是否继续读方法和图表。</p>
+          <p class="section-text">四个关键数字概括研究规模、方法深度与结果水平。</p>
         </div>
         <div class="metric-grid research-metrics">
           <article class="metric-card reveal">
             <strong>89.10%</strong>
-            <span>14B 学生在 991 题全量测试集的最佳准确率</span>
+            <p>建立 GT SFT 基线，保证后续所有提升都有明确对照。</p>
           </article>
           <article class="metric-card reveal">
             <strong>88.67%</strong>
-            <span>14B 学生三种子平均准确率</span>
+            <p>系统比较白盒 KL、黑盒 Choice-Head、多教师融合和推理链蒸馏。</p>
           </article>
           <article class="metric-card reveal">
             <strong>17</strong>
@@ -101,11 +101,11 @@
         <div class="matrix-grid research-method-grid">
           <article class="matrix-card reveal">
             <h3>先做基线</h3>
-            <p>先建立 GT SFT 基线，保证后续所有提升都有明确对照，不陷入“跑出来了但不知道为什么”。</p>
+            <p>先建立 GT SFT 基线，保证后续所有提升都有明确对照。</p>
           </article>
           <article class="matrix-card reveal">
             <h3>再比较蒸馏范式</h3>
-            <p>系统比较白盒 KL、黑盒 Choice-Head、多教师融合和推理链蒸馏，而不是只选一种方法讲故事。</p>
+            <p>系统比较白盒 KL、黑盒 Choice-Head、多教师融合和推理链蒸馏。</p>
           </article>
           <article class="matrix-card reveal">
             <h3>聚焦 Choice-Head</h3>
@@ -113,7 +113,7 @@
           </article>
           <article class="matrix-card reveal">
             <h3>最后扩大评估</h3>
-            <p>把测试集从 83 题扩到 991 题，验证结果不是小样本波动，确保论文结论在统计上站得住。</p>
+            <p>把测试集从 83 题扩到 991 题，验证结果在更大样本上的稳定性。</p>
           </article>
         </div>
       </div>
@@ -128,7 +128,7 @@
         <div class="timeline-list">
           <article class="timeline-card reveal">
             <span class="time-range">结论 1</span>
-            <h3>Choice-Head 不是技巧，而是任务结构驱动的方法选择</h3>
+            <h3>Choice-Head 是由任务结构驱动的方法选择</h3>
             <p class="timeline-meta">Module 02 / 13 / 15</p>
             <p>它直接围绕选择题的五个选项做蒸馏，既降低实现与部署复杂度，也比更重的白盒方案更适合这个具体任务。</p>
           </article>
@@ -136,13 +136,13 @@
             <span class="time-range">结论 2</span>
             <h3>强学生模型继续做 Stage 2，不一定会更好</h3>
             <p class="timeline-meta">Module 13</p>
-            <p>14B 学生在单阶段蒸馏时峰值达到 84.34%，继续做 GT SFT 反而可能回退，这说明方法设计必须考虑学生自身基线，而不是默认训练越多越好。</p>
+            <p>14B 学生在单阶段蒸馏时峰值达到 84.34%，继续做 GT SFT 反而可能回退，说明方法设计必须考虑学生自身基线。</p>
           </article>
           <article class="timeline-card reveal">
             <span class="time-range">结论 3</span>
             <h3>更大的测试集证明学生模型可以稳定超越教师</h3>
             <p class="timeline-meta">Module 15</p>
-            <p>14B 学生三种子均值 88.67%，高于教师 87.18%；最佳 89.10%。同时三种子极差只有 0.70pp，说明这个结论不是偶然峰值。</p>
+            <p>14B 学生三种子均值 88.67%，高于教师 87.18%；最佳 89.10%。同时三种子极差只有 0.70pp，说明结果具有稳定性。</p>
           </article>
         </div>
       </div>
