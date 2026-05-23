@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEN Tianyuan | Research</title>
+  <meta name="description" content="Master's thesis research by CHEN Tianyuan on dental multiple-choice automatic answering through knowledge distillation, covering Choice-Head, multi-teacher distillation, and full-test validation.">
+  <meta property="og:title" content="CHEN Tianyuan | Research">
+  <meta property="og:description" content="CMExam medical MCQ research platform where a 14B student model reached 89.10% on a 991-question test set.">
+  <meta property="og:type" content="article">
+  <meta name="twitter:title" content="CHEN Tianyuan | Research">
+  <meta name="twitter:description" content="Master's thesis research covering knowledge distillation, Choice-Head, multi-teacher experiments, and stability validation on a large test set.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body data-page="research">
+  <nav class="site-nav">
+    <div class="shell nav-shell">
+      <a class="brand" href="index.html">CV</a>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="career.html" data-nav="career">Career</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="about.html" data-nav="about">About</a>
+      </div>
+      <div class="lang-switch" aria-label="Language switch">
+        <a href="../research.html">中文</a>
+        <a class="is-current" href="research.html">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-banner research-banner">
+    <div class="shell reveal">
+      <p class="eyebrow">Master's Thesis Research</p>
+      <h1>Automatic Dental Multiple-Choice Question Answering via Knowledge Distillation</h1>
+      <p class="lead narrow">I built a reproducible CMExam medical MCQ experiment platform, used Choice-Head and related methods to push a 14B student model to 89.10%, and validated the result on a larger test set.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block section-plain">
+      <div class="shell highlight-row research-intro">
+        <article class="feature-card reveal">
+          <p class="card-kicker">Research Summary</p>
+          <h2>Research Overview</h2>
+          <p>The goal was to transfer the medical QA capability of large teacher models into a more deployable student model. I built a modular research platform and systematically compared teacher quality, distillation methods, student scale, and data size, ultimately bringing the 14B student model to 89.10% on a 991-question test set.</p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">GitHub Repository</a>
+            <a class="button button-secondary" href="projects.html">View Projects</a>
+          </div>
+        </article>
+        <article class="feature-card reveal compact-card">
+          <p class="card-kicker">Why It Matters</p>
+          <ul class="fact-list compact">
+            <li>Completed a full experiment platform, not just a paper</li>
+            <li>Structured the problem into method, evaluation, and conclusion layers</li>
+            <li>Validated not only peak scores but also large-test-set stability</li>
+            <li>Directly relevant to AI product and technical solution roles</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block section-accent">
+      <div class="shell metrics-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Key Numbers</p>
+          <h2>Four numbers worth remembering first</h2>
+          <p class="section-text">These four metrics summarize scale, method depth, and outcome quality.</p>
+        </div>
+        <div class="metric-grid research-metrics">
+          <article class="metric-card reveal">
+            <strong>89.10%</strong>
+            <span>Best accuracy of the 14B student on the 991-question full test set</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>88.67%</strong>
+            <span>Three-seed average accuracy of the 14B student</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>17</strong>
+            <span>Modular experiment path from baseline to heterogeneous-teacher distillation</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>6591</strong>
+            <span>Scale of the full-data repartitioned single-choice experiment</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-plain">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Method</p>
+          <h2>Four method steps worth keeping</h2>
+        </div>
+        <div class="matrix-grid research-method-grid">
+          <article class="matrix-card reveal">
+            <h3>Build a baseline first</h3>
+            <p>Established a GT SFT baseline to ensure every later gain had a clear point of comparison.</p>
+          </article>
+          <article class="matrix-card reveal">
+            <h3>Compare distillation paradigms</h3>
+            <p>Systematically compared white-box KL, black-box Choice-Head, multi-teacher fusion, and chain-of-thought distillation.</p>
+          </article>
+          <article class="matrix-card reveal">
+            <h3>Focus on Choice-Head</h3>
+            <p>Distilled only the A/B/C/D/E answer distribution for five-option questions, grounding the method in task structure itself.</p>
+          </article>
+          <article class="matrix-card reveal">
+            <h3>Expand evaluation last</h3>
+            <p>Expanded the test set from 83 to 991 questions to confirm stability on a larger sample.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-accent">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Findings</p>
+          <h2>Three conclusions worth highlighting</h2>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-card reveal">
+            <span class="time-range">Finding 1</span>
+            <h3>Choice-Head is driven by task structure</h3>
+            <p class="timeline-meta">Modules 02 / 13 / 15</p>
+            <p>Because it distills directly around the five answer options, it reduces implementation and deployment complexity while fitting the task better than heavier white-box methods.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="time-range">Finding 2</span>
+            <h3>More Stage 2 training is not always better for stronger students</h3>
+            <p class="timeline-meta">Module 13</p>
+            <p>The 14B student peaked at 84.34% with single-stage distillation, and additional GT SFT could degrade performance, showing that method design must account for the student's own baseline.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="time-range">Finding 3</span>
+            <h3>A larger test set shows the student can stably outperform the teacher</h3>
+            <p class="timeline-meta">Module 15</p>
+            <p>The 14B student achieved an 88.67% three-seed mean and a best score of 89.10%, exceeding the teacher's 87.18%, while the three-seed range remained only 0.70pp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-plain">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Figures</p>
+          <h2>Research route and result charts</h2>
+        </div>
+        <div class="research-figure-grid">
+          <figure class="figure-frame reveal">
+            <img src="../assets/research/fig_2_1_tech_route_overview.png" alt="Technical route overview">
+            <figcaption>Technical route overview from baseline and distillation to scaling and full-test validation.</figcaption>
+          </figure>
+          <figure class="figure-frame reveal">
+            <img src="../assets/research/fig_3_1_choice_head_pipeline.png" alt="Choice-Head distillation pipeline">
+            <figcaption>Choice-Head pipeline: constrain distillation to the A/B/C/D/E answer distribution.</figcaption>
+          </figure>
+          <figure class="figure-frame reveal">
+            <img src="../assets/research/fig_4_4_full_data_distill_results.png" alt="Full-data distillation results">
+            <figcaption>Full-data results: the 14B student reached 89.10% on the 991-question test set.</figcaption>
+          </figure>
+          <figure class="figure-frame reveal">
+            <img src="../assets/research/fig_4_5_overall_ranking.png" alt="Overall experiment ranking">
+            <figcaption>Overall ranking across modules and methods for quick comparison.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <p>CHEN Tianyuan</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="career.html">Career</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">mentalDistill</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-quickbar" aria-label="Mobile quick actions">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">Contact</a>
+    <a class="mobile-quickbar-primary" href="../陈天元pm.pdf" download>Resume</a>
+  </div>
+
+  <script src="../js/site.js"></script>
+</body>
+
+</html>
