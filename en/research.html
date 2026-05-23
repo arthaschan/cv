@@ -40,7 +40,7 @@
     <div class="shell reveal">
       <p class="eyebrow">Master's Thesis Research</p>
       <h1>Automatic Dental Multiple-Choice Question Answering via Knowledge Distillation</h1>
-      <p class="lead narrow">I built a reproducible CMExam medical MCQ experiment platform, used Choice-Head and related methods to push a 14B student model to 89.10%, and validated the result on a larger test set.</p>
+      <p class="lead narrow">This research was not only about lifting a score. It was about building an AI research chain that could define the problem, compare methods, and validate results in a way that can be explained clearly.</p>
     </div>
   </header>
 
@@ -48,49 +48,48 @@
     <section class="section-block section-plain">
       <div class="shell highlight-row research-intro">
         <article class="feature-card reveal">
-          <p class="card-kicker">Research Summary</p>
-          <h2>Research Overview</h2>
-          <p>The goal was to transfer the medical QA capability of large teacher models into a more deployable student model. I built a modular research platform and systematically compared teacher quality, distillation methods, student scale, and data size, ultimately bringing the 14B student model to 89.10% on a 991-question test set.</p>
+          <p class="card-kicker">30-second read</p>
+          <h2>This research answers three questions</h2>
+          <p>Can teacher-model capability be transferred into a lighter student model, which method fits this task best, and does the result still hold on a larger test set?</p>
           <div class="cta-row">
             <a class="button button-primary" href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">GitHub Repository</a>
             <a class="button button-secondary" href="projects.html">View Projects</a>
           </div>
         </article>
         <article class="feature-card reveal compact-card">
-          <p class="card-kicker">Why It Matters</p>
+          <p class="card-kicker">Start with this</p>
           <ul class="fact-list compact">
-            <li>Completed a full experiment platform, not just a paper</li>
-            <li>Structured the problem into method, evaluation, and conclusion layers</li>
-            <li>Validated not only peak scores but also large-test-set stability</li>
-            <li>Directly relevant to AI product and technical solution roles</li>
+            <li>Built a fully reproducible experiment platform</li>
+            <li>Choice-Head became the key method judgment</li>
+            <li>The 14B student reached 89.10% on the 991-question test set</li>
+            <li>The research process maps directly to AI product and solution roles</li>
           </ul>
         </article>
       </div>
     </section>
 
     <section class="section-block section-accent">
-      <div class="shell metrics-wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Key Numbers</p>
-          <h2>Four numbers worth remembering first</h2>
-          <p class="section-text">These four metrics summarize scale, method depth, and outcome quality.</p>
+      <div class="shell">
+        <div class="quote-band reveal">
+          <p class="eyebrow">What matters most here</p>
+          <h2>I did not only run a successful experiment. I carried the full path from problem framing to method comparison and result validation.</h2>
+          <p>That matters because it turns AI work from vocabulary familiarity into task definition, experiment design, and result interpretation.</p>
         </div>
-        <div class="metric-grid research-metrics">
-          <article class="metric-card reveal">
-            <strong>89.10%</strong>
-            <span>Best accuracy of the 14B student on the 991-question full test set</span>
+        <div class="career-lens reveal">
+          <article class="method-step">
+            <span>01</span>
+            <h3>Define the task first</h3>
+            <p>Constrain the work to the medical multiple-choice setting so the research scope remains useful and controllable.</p>
           </article>
-          <article class="metric-card reveal">
-            <strong>88.67%</strong>
-            <span>Three-seed average accuracy of the 14B student</span>
+          <article class="method-step">
+            <span>02</span>
+            <h3>Compare methods next</h3>
+            <p>Test distillation style, student scale, and data size systematically instead of drawing conclusions from intuition.</p>
           </article>
-          <article class="metric-card reveal">
-            <strong>17</strong>
-            <span>Modular experiment path from baseline to heterogeneous-teacher distillation</span>
-          </article>
-          <article class="metric-card reveal">
-            <strong>6591</strong>
-            <span>Scale of the full-data repartitioned single-choice experiment</span>
+          <article class="method-step">
+            <span>03</span>
+            <h3>Validate at larger scale</h3>
+            <p>Move the result onto a larger test set to confirm that the conclusion is not only a peak score.</p>
           </article>
         </div>
       </div>
@@ -99,31 +98,71 @@
     <section class="section-block section-plain">
       <div class="shell">
         <div class="section-head reveal">
-          <p class="eyebrow">Method</p>
-          <h2>Four method steps worth keeping</h2>
+          <p class="eyebrow">Key numbers</p>
+          <h2>These three numbers are enough to remember first</h2>
         </div>
-        <div class="matrix-grid research-method-grid">
-          <article class="matrix-card reveal">
-            <h3>Build a baseline first</h3>
-            <p>Established a GT SFT baseline to ensure every later gain had a clear point of comparison.</p>
+        <div class="career-proof-grid">
+          <article class="proof-card reveal">
+            <span class="proof-label">Outcome</span>
+            <h3>Best 14B student accuracy</h3>
+            <p>The strongest result on the 991-question full test set, showing the student model reached a competitive level.</p>
+            <div class="proof-metric">89.10%</div>
           </article>
-          <article class="matrix-card reveal">
-            <h3>Compare distillation paradigms</h3>
-            <p>Systematically compared white-box KL, black-box Choice-Head, multi-teacher fusion, and chain-of-thought distillation.</p>
+          <article class="proof-card reveal">
+            <span class="proof-label">Stability</span>
+            <h3>Three-seed mean accuracy</h3>
+            <p>The work has average-case support, not only a single peak run.</p>
+            <div class="proof-metric">88.67%</div>
           </article>
-          <article class="matrix-card reveal">
-            <h3>Focus on Choice-Head</h3>
-            <p>Distilled only the A/B/C/D/E answer distribution for five-option questions, grounding the method in task structure itself.</p>
-          </article>
-          <article class="matrix-card reveal">
-            <h3>Expand evaluation last</h3>
-            <p>Expanded the test set from 83 to 991 questions to confirm stability on a larger sample.</p>
+          <article class="proof-card reveal">
+            <span class="proof-label">Depth</span>
+            <h3>Modular experiment path</h3>
+            <p>From baseline to heterogeneous-teacher distillation, the path is broad enough to support real method judgment.</p>
+            <div class="proof-metric">17 modules</div>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section-block section-accent">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Method judgment</p>
+          <h2>If I had to explain the method in three points</h2>
+        </div>
+        <div class="case-strip-grid">
+          <article class="case-strip reveal">
+            <div class="case-strip-head">
+              <span class="case-strip-num">01</span>
+              <span class="case-strip-tag">Task framing</span>
+            </div>
+            <h3>Establish the baseline first</h3>
+            <p>A GT SFT baseline was necessary so every later gain had a real comparison point.</p>
+            <div class="case-strip-metric">Baseline before optimization</div>
+          </article>
+          <article class="case-strip reveal">
+            <div class="case-strip-head">
+              <span class="case-strip-num">02</span>
+              <span class="case-strip-tag">Method choice</span>
+            </div>
+            <h3>Choice-Head is the core decision</h3>
+            <p>By distilling only the A/B/C/D/E answer distribution, the method stays aligned with task structure itself.</p>
+            <div class="case-strip-metric">Task structure drives method design</div>
+          </article>
+          <article class="case-strip reveal">
+            <div class="case-strip-head">
+              <span class="case-strip-num">03</span>
+              <span class="case-strip-tag">Validation</span>
+            </div>
+            <h3>Scale the evaluation last</h3>
+            <p>Expanding the test set from 83 to 991 questions confirmed that the result was not only a peak score.</p>
+            <div class="case-strip-metric">Stability matters more than one peak</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-plain">
       <div class="shell">
         <div class="section-head reveal">
           <p class="eyebrow">Findings</p>
@@ -132,31 +171,32 @@
         <div class="timeline-list">
           <article class="timeline-card reveal">
             <span class="time-range">Finding 1</span>
-            <h3>Choice-Head is driven by task structure</h3>
+            <h3>Choice-Head is not a trick. It is a method shaped by task structure.</h3>
             <p class="timeline-meta">Modules 02 / 13 / 15</p>
-            <p>Because it distills directly around the five answer options, it reduces implementation and deployment complexity while fitting the task better than heavier white-box methods.</p>
+            <p>It is better aligned with this task than heavier white-box methods and easier to explain in practical delivery terms.</p>
           </article>
           <article class="timeline-card reveal">
             <span class="time-range">Finding 2</span>
-            <h3>More Stage 2 training is not always better for stronger students</h3>
+            <h3>Additional Stage 2 training is not always better for stronger students</h3>
             <p class="timeline-meta">Module 13</p>
-            <p>The 14B student peaked at 84.34% with single-stage distillation, and additional GT SFT could degrade performance, showing that method design must account for the student's own baseline.</p>
+            <p>The 14B student reached 84.34% under single-stage distillation, while extra GT SFT could make it worse, which means method design must respect the student's own baseline.</p>
           </article>
           <article class="timeline-card reveal">
             <span class="time-range">Finding 3</span>
             <h3>A larger test set shows the student can stably outperform the teacher</h3>
             <p class="timeline-meta">Module 15</p>
-            <p>The 14B student achieved an 88.67% three-seed mean and a best score of 89.10%, exceeding the teacher's 87.18%, while the three-seed range remained only 0.70pp.</p>
+            <p>The 14B student reached an 88.67% three-seed mean and a best result of 89.10%, above the teacher's 87.18%, with only a 0.70pp range.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-block section-plain">
+    <section class="section-block section-accent">
       <div class="shell">
         <div class="section-head reveal">
           <p class="eyebrow">Figures</p>
-          <h2>Research route and result charts</h2>
+          <h2>These four figures are the ones worth keeping</h2>
+          <p class="section-text">If someone does not want the full report, these four visuals are enough to understand the route, the method, and the result.</p>
         </div>
         <div class="research-figure-grid">
           <figure class="figure-frame reveal">
