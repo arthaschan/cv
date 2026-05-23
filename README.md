@@ -41,18 +41,28 @@ http://127.0.0.1:4173/index.html
 5. Branch 选择 main，Folder 选择 /(root)
 6. 保存后等待 GitHub Pages 完成部署
 
+当前仓库已经补齐这些 Pages 配套文件：
+
+- 404.html
+- robots.txt
+- sitemap.xml
+
 部署后站点通常会出现在：
 
 ```text
 https://<你的用户名>.github.io/<仓库名>/index.html
 ```
 
+对当前仓库来说，对应地址是：
+
+```text
+https://arthaschan.github.io/cv/index.html
+```
+
 如果你后续绑定自定义域名，可以再补：
 
 - CNAME
-- 404.html
-- robots.txt
-- sitemap.xml
+- 更新 robots.txt 和 sitemap.xml 中的域名
 
 ## 后续可继续增强
 
