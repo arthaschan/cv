@@ -48,21 +48,21 @@
     <section class="section-block section-plain">
       <div class="shell highlight-row research-intro">
         <article class="feature-card reveal">
-          <p class="card-kicker">Quick read</p>
-          <h2>Start with what this research resolves</h2>
-          <p>Can teacher-model capability be transferred into a lighter student model, which method fits this task best, and does the result still hold on a larger test set?</p>
+          <p class="card-kicker">Research question</p>
+          <h2>I was not only asking whether the score could rise, but whether a smaller model could reliably inherit teacher capability</h2>
+          <p>If distillation only wins once on a small test set, it is hard to trust in practice. The real question here was whether capability could transfer, which method actually fit the task, and whether the conclusion would survive at larger scale.</p>
           <div class="cta-row">
             <a class="button button-primary" href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">GitHub Repository</a>
             <a class="button button-secondary" href="projects.html">View Projects</a>
           </div>
         </article>
         <article class="feature-card reveal compact-card">
-          <p class="card-kicker">Key findings</p>
+          <p class="card-kicker">Why it matters</p>
           <ul class="fact-list compact">
-            <li>Built a fully reproducible experiment platform</li>
-            <li>Choice-Head became the key method judgment</li>
+            <li>Not just the best score, but a full decision path</li>
+            <li>The method choice stays close to task structure</li>
             <li>The 14B student reached 89.10% on the 991-question test set</li>
-            <li>The research process maps directly to AI product and solution roles</li>
+            <li>The research path maps directly to AI product and solution work</li>
           </ul>
         </article>
       </div>
@@ -71,32 +71,32 @@
     <section class="section-block section-accent">
       <div class="shell">
         <div class="quote-band reveal">
-          <p class="eyebrow">What matters most here</p>
-          <h2>I did not only run a successful experiment. I carried the full path from problem framing to method comparison and result validation.</h2>
-          <p>That matters because it turns AI work from vocabulary familiarity into task definition, experiment design, and result interpretation.</p>
+          <p class="eyebrow">One-line judgment</p>
+          <h2>The real value of this research is not one strong run. It is that problem framing, method choice, and result validation were connected into one complete path.</h2>
+          <p>What that gave me was not only model familiarity, but the ability to define an AI problem clearly, work through it, and explain the result back in practical language.</p>
         </div>
         <div class="career-lens reveal">
           <article class="method-step">
             <span>01</span>
-            <h3>Define the task first</h3>
-            <p>Constrain the work to the medical multiple-choice setting so the research scope remains useful and controllable.</p>
+            <h3>Narrow the task first</h3>
+            <p>Keep the work inside the medical five-option setting so the boundary is clear before any optimization begins.</p>
           </article>
           <article class="method-step">
             <span>02</span>
-            <h3>Compare methods next</h3>
-            <p>Test distillation style, student scale, and data size systematically instead of drawing conclusions from intuition.</p>
+            <h3>Make the method fit the task</h3>
+            <p>Compare Choice-Head, student scale, and distillation style so method follows task structure instead of intuition.</p>
           </article>
           <article class="method-step">
             <span>03</span>
             <h3>Validate at larger scale</h3>
-            <p>Move the result onto a larger test set to confirm that the conclusion is not only a peak score.</p>
+            <p>Move the result onto the 991-question test set to confirm the conclusion is stable rather than accidental.</p>
           </article>
         </div>
         <div class="visual-board reveal">
           <div class="visual-board-diagram">
             <div class="visual-node-layer">
-              <span class="visual-node">Task framing</span>
-              <span class="visual-node">Method comparison</span>
+              <span class="visual-node">Task boundary</span>
+              <span class="visual-node">Method fit</span>
               <span class="visual-node">Stability validation</span>
             </div>
             <div class="visual-core">
@@ -106,12 +106,12 @@
           </div>
           <div class="visual-board-copy">
             <p class="card-kicker">My view</p>
-            <h3>This is a complete applied AI path</h3>
-            <p>The value of this work is not only a higher result. It is the fact that the task definition, method choice, and result interpretation were connected into one explainable research path.</p>
+            <h3>This is not a one-off experiment, but a repeatable reasoning path</h3>
+            <p>Translated into work terms, this means I can define the problem, compare viable paths, and then judge whether the result is actually trustworthy.</p>
             <ul class="fact-list compact">
-              <li>Frame the task before defending the method</li>
-              <li>Run comparisons before claiming a conclusion</li>
-              <li>Check stability before trusting a peak score</li>
+              <li>Boundary before method</li>
+              <li>Comparison before conclusion</li>
+              <li>Stability before peak score</li>
             </ul>
           </div>
         </div>
@@ -121,37 +121,9 @@
     <section class="section-block section-plain">
       <div class="shell">
         <div class="section-head reveal">
-          <p class="eyebrow">Key numbers</p>
-          <h2>These three numbers are enough to remember first</h2>
-        </div>
-        <div class="career-proof-grid">
-          <article class="proof-card reveal">
-            <span class="proof-label">Outcome</span>
-            <h3>Best 14B student accuracy</h3>
-            <p>The strongest result on the 991-question full test set, showing the student model reached a competitive level.</p>
-            <div class="proof-metric">89.10%</div>
-          </article>
-          <article class="proof-card reveal">
-            <span class="proof-label">Stability</span>
-            <h3>Three-seed mean accuracy</h3>
-            <p>The work has average-case support, not only a single peak run.</p>
-            <div class="proof-metric">88.67%</div>
-          </article>
-          <article class="proof-card reveal">
-            <span class="proof-label">Depth</span>
-            <h3>Modular experiment path</h3>
-            <p>From baseline to heterogeneous-teacher distillation, the path is broad enough to support real method judgment.</p>
-            <div class="proof-metric">17 modules</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block section-accent">
-      <div class="shell">
-        <div class="section-head reveal">
-          <p class="eyebrow">Method judgment</p>
-          <h2>If I had to explain the method in three points</h2>
+          <p class="eyebrow">How it was done</p>
+          <h2>If I had to explain the method, I would start from these three steps</h2>
+          <p class="section-text">I do not think this work should be remembered as a list of modules. It is clearer when compressed into three decision points.</p>
         </div>
         <div class="case-strip-grid">
           <article class="case-strip reveal">
@@ -160,17 +132,17 @@
               <span class="case-strip-tag">Task framing</span>
             </div>
             <h3>Establish the baseline first</h3>
-            <p>A GT SFT baseline was necessary so every later gain had a real comparison point.</p>
-            <div class="case-strip-metric">Baseline before optimization</div>
+            <p>A GT SFT baseline came first so every later gain had a real comparison point.</p>
+            <div class="case-strip-metric">Comparable before better</div>
           </article>
           <article class="case-strip reveal">
             <div class="case-strip-head">
               <span class="case-strip-num">02</span>
               <span class="case-strip-tag">Method choice</span>
             </div>
-            <h3>Choice-Head is the core decision</h3>
-            <p>By distilling only the A/B/C/D/E answer distribution, the method stays aligned with task structure itself.</p>
-            <div class="case-strip-metric">Task structure drives method design</div>
+            <h3>Choice-Head is the key judgment</h3>
+            <p>Because the task itself is five-option multiple choice, the method should also stay close to the A/B/C/D/E answer structure.</p>
+            <div class="case-strip-metric">Task structure drives method</div>
           </article>
           <article class="case-strip reveal">
             <div class="case-strip-head">
@@ -178,8 +150,38 @@
               <span class="case-strip-tag">Validation</span>
             </div>
             <h3>Scale the evaluation last</h3>
-            <p>Expanding the test set from 83 to 991 questions confirmed that the result was not only a peak score.</p>
-            <div class="case-strip-metric">Stability matters more than one peak</div>
+            <p>I expanded the test set from 83 to 991 questions to check whether the conclusion still held when the sample became much larger.</p>
+            <div class="case-strip-metric">Stability matters more than a peak</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-accent">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Findings</p>
+          <h2>These are the three judgments that remained after the experiments</h2>
+          <p class="section-text">Each point below is more than a score line. Each one corresponds to a method or experiment conclusion that can be defended.</p>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-card reveal">
+            <span class="time-range">Finding 1</span>
+            <h3>Choice-Head is not a trick. It is a method choice pushed out by task structure.</h3>
+            <p class="timeline-meta">Modules 02 / 13 / 15</p>
+            <p>It is better aligned with this task than heavier white-box methods and easier to explain and reuse in practical work.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="time-range">Finding 2</span>
+            <h3>Additional Stage 2 training does not automatically make a strong student better</h3>
+            <p class="timeline-meta">Module 13</p>
+            <p>The 14B student reached 84.34% under single-stage distillation, while extra GT SFT could make it worse, which means method design must respect the student's own baseline.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="time-range">Finding 3</span>
+            <h3>A larger test set shows the student can stably outperform the teacher</h3>
+            <p class="timeline-meta">Module 15</p>
+            <p>The 14B student reached an 88.67% three-seed mean and a best result of 89.10%, above the teacher's 87.18%, with only a 0.70pp range. That makes the result credible rather than just visually strong.</p>
           </article>
         </div>
       </div>
@@ -188,27 +190,28 @@
     <section class="section-block section-plain">
       <div class="shell">
         <div class="section-head reveal">
-          <p class="eyebrow">Findings</p>
-          <h2>Three conclusions worth highlighting</h2>
+          <p class="eyebrow">What this says about me</p>
+          <h2>If I translate the thesis into role language, it proves three capability lines</h2>
+          <p class="section-text">That is why this page belongs on a resume website rather than staying only inside the thesis itself.</p>
         </div>
-        <div class="timeline-list">
-          <article class="timeline-card reveal">
-            <span class="time-range">Finding 1</span>
-            <h3>Choice-Head is not a trick. It is a method shaped by task structure.</h3>
-            <p class="timeline-meta">Modules 02 / 13 / 15</p>
-            <p>It is better aligned with this task than heavier white-box methods and easier to explain in practical delivery terms.</p>
+        <div class="career-proof-grid">
+          <article class="proof-card reveal">
+            <span class="proof-label">Experiment design</span>
+            <h3>I can turn a problem into a testable experiment path</h3>
+            <p>I do not start from a method and hope it works. I build baselines, comparisons, and validation logic first.</p>
+            <div class="proof-metric">17 modules</div>
           </article>
-          <article class="timeline-card reveal">
-            <span class="time-range">Finding 2</span>
-            <h3>Additional Stage 2 training is not always better for stronger students</h3>
-            <p class="timeline-meta">Module 13</p>
-            <p>The 14B student reached 84.34% under single-stage distillation, while extra GT SFT could make it worse, which means method design must respect the student's own baseline.</p>
+          <article class="proof-card reveal">
+            <span class="proof-label">Method judgment</span>
+            <h3>I can tell which method truly fits the task</h3>
+            <p>I do not automatically favor the most complex method. I ask whether the method matches the task structure itself.</p>
+            <div class="proof-metric">89.10% / 88.67%</div>
           </article>
-          <article class="timeline-card reveal">
-            <span class="time-range">Finding 3</span>
-            <h3>A larger test set shows the student can stably outperform the teacher</h3>
-            <p class="timeline-meta">Module 15</p>
-            <p>The 14B student reached an 88.67% three-seed mean and a best result of 89.10%, above the teacher's 87.18%, with only a 0.70pp range.</p>
+          <article class="proof-card reveal">
+            <span class="proof-label">Result communication</span>
+            <h3>I can translate a technical result into a discussion-worthy conclusion</h3>
+            <p>Not only what the result is, but why it can be trusted, why it matters, and why it is worth continuing.</p>
+            <div class="proof-metric">Repeatable research path</div>
           </article>
         </div>
       </div>
