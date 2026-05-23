@@ -372,7 +372,7 @@ img {
 }
 
 .button-primary {
-  color: #ffffff;
+  color: #08111d;
   background: var(--aqua);
 }
 
@@ -427,7 +427,7 @@ img {
   padding: 16px 16px 14px;
   border-radius: 18px;
   border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255, 252, 246, 0.92), rgba(244, 236, 224, 0.82));
+  background: linear-gradient(180deg, rgba(20, 31, 48, 0.92), rgba(12, 20, 32, 0.82));
 }
 
 .stat-chip strong {
@@ -923,8 +923,8 @@ img {
 
 .site-footer {
   padding: 28px 0 38px;
-  border-top: 1px solid rgba(81, 111, 152, 0.1);
-  background: rgba(245, 249, 254, 0.9);
+  border-top: 1px solid rgba(127, 155, 193, 0.1);
+  background: rgba(7, 13, 23, 0.88);
 }
 
 .footer-shell {
@@ -974,7 +974,8 @@ img {
   margin: 0 auto;
   padding: 14px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(16, 26, 40, 0.96);
+  border: 1px solid rgba(127, 155, 193, 0.12);
 }
 
 .qr-download-actions {
@@ -1034,7 +1035,7 @@ img {
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(19, 31, 48, 0.78);
   color: var(--text);
   font-size: 0.74rem;
   font-weight: 700;
@@ -1114,8 +1115,8 @@ img {
 .case-strip-tag {
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(81, 111, 152, 0.14);
-  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(127, 155, 193, 0.16);
+  background: rgba(19, 31, 48, 0.78);
   color: var(--aqua);
   font-size: 0.72rem;
   font-weight: 700;
@@ -1240,7 +1241,7 @@ img {
 
 @media (max-width: 720px) {
   body {
-    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
   }
 
   body.lang-en {
@@ -1299,7 +1300,7 @@ img {
   }
 
   .hero-home {
-    padding-bottom: 40px;
+    padding-bottom: 28px;
   }
 
   .hero-grid,
@@ -1307,7 +1308,7 @@ img {
   .two-column,
   .intro-grid,
   .contact-layout {
-    gap: 18px;
+    gap: 14px;
   }
 
   .hero-copy h1,
@@ -1329,8 +1330,8 @@ img {
   }
 
   .lead {
-    margin-top: 18px;
-    font-size: 0.98rem;
+    margin-top: 14px;
+    font-size: 0.94rem;
   }
 
   .lang-en .lead,
@@ -1359,7 +1360,7 @@ img {
   }
 
   .section-block {
-    padding: 58px 0;
+    padding: 44px 0;
   }
 
   .hero-card,
@@ -1371,7 +1372,7 @@ img {
   .metric-card,
   .contact-card,
   .project-card {
-    padding: 20px;
+    padding: 16px;
   }
 
   .project-head {
@@ -1387,7 +1388,7 @@ img {
   .project-tags,
   .project-role-tags,
   .footer-links {
-    gap: 8px;
+    gap: 6px;
   }
 
   .quickfact,
@@ -1395,8 +1396,8 @@ img {
   .figure-frame figcaption,
   .case-strip,
   .proof-card {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .hero-statbar {
@@ -1415,6 +1416,8 @@ img {
 
   .cta-row {
     flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
   }
 
   .hero-quickfacts,
@@ -1451,12 +1454,14 @@ img {
 
   .project-roleline {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 6px;
+    padding: 10px 12px;
   }
 
   .button {
     width: 100%;
-    min-height: 52px;
+    min-height: 46px;
+    padding: 0 16px;
   }
 
   .mobile-quickbar {
@@ -1467,10 +1472,10 @@ img {
     z-index: 40;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 8px;
-    padding: 10px;
+    gap: 6px;
+    padding: 8px;
     border: 1px solid rgba(127, 155, 193, 0.16);
-    border-radius: 18px;
+    border-radius: 16px;
     background: rgba(9, 16, 27, 0.94);
     backdrop-filter: blur(18px);
     box-shadow: 0 18px 32px rgba(2, 7, 15, 0.32);
@@ -1480,13 +1485,13 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 44px;
-    padding: 0 10px;
-    border-radius: 12px;
+    min-height: 40px;
+    padding: 0 8px;
+    border-radius: 10px;
     border: 1px solid rgba(127, 155, 193, 0.14);
     background: rgba(19, 31, 48, 0.8);
     color: var(--text);
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 800;
     letter-spacing: 0.02em;
   }
@@ -1499,14 +1504,14 @@ img {
 
   .quote-band {
     grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 28px 24px;
+    gap: 10px;
+    padding: 22px 18px;
   }
 
   .section-head {
     grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 8px;
+    margin-bottom: 16px;
   }
 
   .section-head .eyebrow,
@@ -1541,8 +1546,8 @@ img {
 
   .quote-band h2 {
     max-width: 100%;
-    font-size: clamp(1.18rem, 4.1vw, 1.56rem);
-    line-height: 1.2;
+    font-size: clamp(1.04rem, 3.8vw, 1.34rem);
+    line-height: 1.22;
   }
 }
 
@@ -1568,7 +1573,7 @@ img {
   }
 
   .lead {
-    font-size: 0.94rem;
+    font-size: 0.9rem;
   }
 
   .lang-en .lead,
@@ -1586,7 +1591,7 @@ img {
   .project-tags span,
   .project-role-tags span,
   .case-strip-tag {
-    font-size: 0.68rem;
+    font-size: 0.64rem;
   }
 
   .signal-pill {
@@ -1605,17 +1610,17 @@ img {
   }
 
   .quote-band {
-    padding: 24px 20px;
+    padding: 18px 16px;
   }
 
   .quote-band h2 {
-    font-size: 1.08rem;
-    line-height: 1.24;
+    font-size: 0.98rem;
+    line-height: 1.26;
   }
 
   .section-head h2 {
-    font-size: 1.5rem;
-    line-height: 1.16;
+    font-size: 1.32rem;
+    line-height: 1.18;
   }
 
   .hero-quickfacts {
@@ -1646,7 +1651,32 @@ img {
   .metric-card span,
   .project-summary,
   .figure-frame figcaption {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
+  }
+
+  .hero-card,
+  .feature-card,
+  .timeline-card,
+  .matrix-card,
+  .edu-card,
+  .stack-item,
+  .metric-card,
+  .contact-card,
+  .project-card,
+  .case-strip,
+  .proof-card {
+    padding: 14px;
+  }
+
+  .project-head h2 {
+    font-size: 1.38rem;
+    line-height: 1.12;
+  }
+
+  .mobile-quickbar {
+    left: 10px;
+    right: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
   }
 
   .hero-card,
