@@ -514,6 +514,10 @@ img {
 }
 
 .quote-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.82fr);
+  gap: 14px 30px;
+  align-items: end;
   padding: 34px 38px;
   border: 1px solid var(--line);
   border-radius: 28px;
@@ -522,19 +526,30 @@ img {
   box-shadow: var(--shadow);
 }
 
+.quote-band .eyebrow {
+  grid-column: 2;
+  align-self: start;
+  margin-top: 2px;
+}
+
 .quote-band h2 {
-  margin-top: 12px;
-  max-width: 22ch;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin-top: 0;
+  max-width: none;
   font-family: "Cormorant Garamond", "Noto Serif SC", serif;
-  font-size: clamp(1.4rem, 2vw, 2.2rem);
-  line-height: 1.18;
+  font-size: clamp(1.24rem, 1.72vw, 1.88rem);
+  line-height: 1.24;
   letter-spacing: -0.03em;
   color: var(--text);
 }
 
-.quote-band p {
-  margin-top: 14px;
-  max-width: 58ch;
+.quote-band > p:not(.eyebrow) {
+  grid-column: 2;
+  margin-top: 0;
+  max-width: 34ch;
+  padding-top: 14px;
+  border-top: 1px solid rgba(127, 155, 193, 0.16);
   color: var(--muted);
 }
 
@@ -1457,9 +1472,28 @@ img {
     border-color: transparent;
   }
 
+  .quote-band {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 28px 24px;
+  }
+
+  .quote-band .eyebrow,
+  .quote-band h2,
+  .quote-band > p:not(.eyebrow) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .quote-band > p:not(.eyebrow) {
+    max-width: 100%;
+    padding-top: 0;
+    border-top: 0;
+  }
+
   .quote-band h2 {
     max-width: 100%;
-    font-size: clamp(1.28rem, 4.8vw, 1.86rem);
+    font-size: clamp(1.18rem, 4.1vw, 1.56rem);
     line-height: 1.2;
   }
 }
@@ -1527,7 +1561,7 @@ img {
   }
 
   .quote-band h2 {
-    font-size: 1.22rem;
+    font-size: 1.08rem;
     line-height: 1.24;
   }
 
