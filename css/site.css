@@ -688,6 +688,33 @@ img {
   gap: 18px;
 }
 
+.qr-download-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.qr-download-card {
+  display: grid;
+  gap: 16px;
+}
+
+.qr-download-card img {
+  width: min(100%, 260px);
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.qr-download-actions {
+  display: grid;
+  gap: 10px;
+}
+
 .project-list {
   display: grid;
   gap: 18px;
@@ -915,6 +942,7 @@ img {
   .highlight-row,
   .intro-grid,
   .contact-layout,
+  .qr-download-grid,
   .feature-grid,
   .matrix-grid,
   .metric-grid,
@@ -940,6 +968,10 @@ img {
 @media (max-width: 720px) {
   body {
     padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+
+  body.lang-en {
+    line-height: 1.62;
   }
 
   .shell {
@@ -1019,9 +1051,33 @@ img {
     margin-top: 14px;
   }
 
+  .lang-en .hero-copy h1 {
+    font-size: clamp(2.45rem, 11vw, 4rem);
+  }
+
   .lead {
     margin-top: 18px;
     font-size: 0.98rem;
+  }
+
+  .lang-en .lead,
+  .lang-en .feature-card p,
+  .lang-en .project-summary,
+  .lang-en .project-block p,
+  .lang-en .timeline-card p,
+  .lang-en .matrix-card p,
+  .lang-en .contact-card strong,
+  .lang-en .section-text {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  .lang-en .signal-pill {
+    font-size: 0.7rem;
+  }
+
+  .lang-en .button {
+    font-size: 0.84rem;
   }
 
   .signal-row {
@@ -1095,6 +1151,10 @@ img {
   .case-strip-grid,
   .career-proof-grid {
     grid-template-columns: 1fr;
+  }
+
+  .qr-download-card img {
+    width: min(100%, 220px);
   }
 
   .project-roleline {
@@ -1171,6 +1231,17 @@ img {
     font-size: 0.94rem;
   }
 
+  .lang-en .lead,
+  .lang-en .feature-card p,
+  .lang-en .project-summary,
+  .lang-en .project-block p,
+  .lang-en .timeline-card p,
+  .lang-en .matrix-card p,
+  .lang-en .contact-card strong,
+  .lang-en .section-text {
+    font-size: 0.88rem;
+  }
+
   .signal-pill,
   .project-tags span,
   .project-role-tags span,
@@ -1195,6 +1266,10 @@ img {
 
   .hero-quickfacts {
     margin-top: 20px;
+  }
+
+  .lang-en .hero-quickfacts {
+    grid-template-columns: 1fr;
   }
 
   .hero-statbar {
