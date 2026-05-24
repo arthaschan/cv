@@ -326,6 +326,22 @@ img {
   max-width: 880px;
 }
 
+.page-banner-minimal {
+  min-height: auto;
+  align-items: center;
+  padding: 5rem 0 3.5rem;
+}
+
+.page-banner-minimal .lead-hero {
+  margin-top: 0;
+  max-width: 820px;
+  font-family: "Cormorant Garamond", "Noto Serif SC", serif;
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--sand2);
+}
+
 .name-lockup {
   display: flex;
   flex-direction: column;
@@ -968,6 +984,20 @@ img {
 
   .page-banner h1 {
     font-size: clamp(1.9rem, 7vw, 2.6rem);
+  }
+
+  .page-banner-minimal {
+    padding: 3.8rem 0 2rem;
+  }
+
+  .page-banner-minimal .lead-hero {
+    font-size: clamp(1.35rem, 5.2vw, 1.85rem);
+    line-height: 1.42;
+  }
+
+  .lang-en .page-banner-minimal .lead-hero {
+    font-size: clamp(1.2rem, 4.8vw, 1.65rem);
+    line-height: 1.48;
   }
 
   .eyebrow,
