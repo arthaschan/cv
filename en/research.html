@@ -5,13 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CHEN Tianyuan | Research</title>
-  <meta name="description" content="Master's thesis research by CHEN Tianyuan on dental multiple-choice automatic answering through knowledge distillation, covering Choice-Head, multi-teacher distillation, and full-test validation.">
-  <meta property="og:title" content="CHEN Tianyuan | Research">
-  <meta property="og:description" content="CMExam medical MCQ research platform where a 14B student model reached 89.10% on a 991-question test set.">
-  <meta property="og:type" content="article">
-  <meta name="twitter:title" content="CHEN Tianyuan | Research">
-  <meta name="twitter:description" content="Master's thesis research covering knowledge distillation, Choice-Head, multi-teacher experiments, and stability validation on a large test set.">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="MSc thesis: knowledge distillation for dental MCQ auto-answering, 14B student model 89.10%.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -21,7 +15,7 @@
 <body class="lang-en" data-page="research">
   <nav class="site-nav">
     <div class="shell nav-shell">
-      <a class="brand" href="index.html">CV</a>
+      <a class="brand" href="index.html">CTY</a>
       <div class="nav-links">
         <a href="index.html" data-nav="home">Home</a>
         <a href="career.html" data-nav="career">Career</a>
@@ -36,210 +30,50 @@
     </div>
   </nav>
 
-  <header class="page-banner research-banner">
+  <header class="page-banner page-hero page-bg-research">
+    <div class="page-hero-bg" aria-hidden="true"></div>
     <div class="shell reveal">
-      <p class="eyebrow">Master's Thesis Research</p>
-      <h1>Automatic Dental Multiple-Choice Question Answering via Knowledge Distillation</h1>
-      <p class="lead narrow">This research was not only about lifting a score. It was about building an AI research chain that could define the problem, compare methods, and validate results in a way that can be explained clearly.</p>
+      <p class="eyebrow">AI Research</p>
+      <h1>Knowledge Distillation for Dental MCQ Auto-Answering</h1>
+      <p class="lead narrow">MSc thesis: transfer teacher capability to a deployable student model, validated through a full experiment chain.</p>
     </div>
   </header>
 
   <main>
-    <section class="section-block section-plain">
-      <div class="shell highlight-row research-intro">
-        <article class="feature-card reveal">
-          <p class="card-kicker">Research question</p>
-          <h2>I was not only asking whether the score could rise, but whether a smaller model could reliably inherit teacher capability</h2>
-          <p>If distillation only wins once on a small test set, it is hard to trust in practice. The real question here was whether capability could transfer, which method actually fit the task, and whether the conclusion would survive at larger scale.</p>
-          <div class="cta-row">
-            <a class="button button-primary" href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">GitHub Repository</a>
-            <a class="button button-secondary" href="projects.html">View Projects</a>
-          </div>
-        </article>
-        <article class="feature-card reveal compact-card">
-          <p class="card-kicker">Why it matters</p>
-          <ul class="fact-list compact">
-            <li>Not just the best score, but a full decision path</li>
-            <li>The method choice stays close to task structure</li>
-            <li>The 14B student reached 89.10% on the 991-question test set</li>
-            <li>The research path maps directly to AI product and solution work</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block section-accent">
+    <section class="section-block">
       <div class="shell">
-        <div class="quote-band reveal">
-          <p class="eyebrow">One-line judgment</p>
-          <h2>The real value of this research is not one strong run. It is that problem framing, method choice, and result validation were connected into one complete path.</h2>
-          <p>What that gave me was not only model familiarity, but the ability to define an AI problem clearly, work through it, and explain the result back in practical language.</p>
-        </div>
-        <div class="career-lens reveal">
-          <article class="method-step">
-            <span>01</span>
-            <h3>Narrow the task first</h3>
-            <p>Keep the work inside the medical five-option setting so the boundary is clear before any optimization begins.</p>
+        <div class="card-grid cols-3">
+          <article class="feature-card reveal">
+            <div class="metric">89.10%</div>
+            <span class="tag">Result</span>
+            <h3>14B Student Beats Teacher</h3>
+            <p>Best accuracy 89.10% on 991 questions; three-seed mean 88.67% vs teacher 87.18%; range only 0.70pp.</p>
           </article>
-          <article class="method-step">
-            <span>02</span>
-            <h3>Make the method fit the task</h3>
-            <p>Compare Choice-Head, student scale, and distillation style so method follows task structure instead of intuition.</p>
+          <article class="feature-card reveal">
+            <div class="metric">Choice-Head</div>
+            <span class="tag">Method</span>
+            <h3>Method Fits Task Structure</h3>
+            <p>Distillation over five-option distributions fits medical MCQs better than heavier white-box alternatives — easier to explain and reuse.</p>
           </article>
-          <article class="method-step">
-            <span>03</span>
-            <h3>Validate at larger scale</h3>
-            <p>Move the result onto the 991-question test set to confirm the conclusion is stable rather than accidental.</p>
-          </article>
-        </div>
-        <div class="visual-board reveal">
-          <div class="visual-board-diagram">
-            <div class="visual-node-layer">
-              <span class="visual-node">Task boundary</span>
-              <span class="visual-node">Method fit</span>
-              <span class="visual-node">Stability validation</span>
+          <article class="feature-card reveal">
+            <div class="metric">17 modules</div>
+            <span class="tag">Platform</span>
+            <h3>Full Experiment Platform</h3>
+            <p>Built baseline → distillation → capacity upgrade → full test pipeline. Open source on GitHub.</p>
+            <div class="cta-row">
+              <a class="button button-primary" href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">GitHub Repo</a>
             </div>
-            <div class="visual-core">
-              <strong>89.10%</strong>
-              <span>Best 14B student accuracy on the 991-question test set</span>
-            </div>
-          </div>
-          <div class="visual-board-copy">
-            <p class="card-kicker">My view</p>
-            <h3>This is not a one-off experiment, but a repeatable reasoning path</h3>
-            <p>Translated into work terms, this means I can define the problem, compare viable paths, and then judge whether the result is actually trustworthy.</p>
-            <ul class="fact-list compact">
-              <li>Boundary before method</li>
-              <li>Comparison before conclusion</li>
-              <li>Stability before peak score</li>
-            </ul>
-          </div>
+          </article>
         </div>
-      </div>
-    </section>
 
-    <section class="section-block section-plain">
-      <div class="shell">
-        <div class="section-head reveal">
-          <p class="eyebrow">How it was done</p>
-          <h2>If I had to explain the method, I would start from these three steps</h2>
-          <p class="section-text">I do not think this work should be remembered as a list of modules. It is clearer when compressed into three decision points.</p>
-        </div>
-        <div class="case-strip-grid">
-          <article class="case-strip reveal">
-            <div class="case-strip-head">
-              <span class="case-strip-num">01</span>
-              <span class="case-strip-tag">Task framing</span>
-            </div>
-            <h3>Establish the baseline first</h3>
-            <p>A GT SFT baseline came first so every later gain had a real comparison point.</p>
-            <div class="case-strip-metric">Comparable before better</div>
-          </article>
-          <article class="case-strip reveal">
-            <div class="case-strip-head">
-              <span class="case-strip-num">02</span>
-              <span class="case-strip-tag">Method choice</span>
-            </div>
-            <h3>Choice-Head is the key judgment</h3>
-            <p>Because the task itself is five-option multiple choice, the method should also stay close to the A/B/C/D/E answer structure.</p>
-            <div class="case-strip-metric">Task structure drives method</div>
-          </article>
-          <article class="case-strip reveal">
-            <div class="case-strip-head">
-              <span class="case-strip-num">03</span>
-              <span class="case-strip-tag">Validation</span>
-            </div>
-            <h3>Scale the evaluation last</h3>
-            <p>I expanded the test set from 83 to 991 questions to check whether the conclusion still held when the sample became much larger.</p>
-            <div class="case-strip-metric">Stability matters more than a peak</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block section-accent">
-      <div class="shell">
-        <div class="section-head reveal">
-          <p class="eyebrow">Findings</p>
-          <h2>These are the three judgments that remained after the experiments</h2>
-          <p class="section-text">Each point below is more than a score line. Each one corresponds to a method or experiment conclusion that can be defended.</p>
-        </div>
-        <div class="timeline-list">
-          <article class="timeline-card reveal">
-            <span class="time-range">Finding 1</span>
-            <h3>Choice-Head is not a trick. It is a method choice pushed out by task structure.</h3>
-            <p class="timeline-meta">Modules 02 / 13 / 15</p>
-            <p>It is better aligned with this task than heavier white-box methods and easier to explain and reuse in practical work.</p>
-          </article>
-          <article class="timeline-card reveal">
-            <span class="time-range">Finding 2</span>
-            <h3>Additional Stage 2 training does not automatically make a strong student better</h3>
-            <p class="timeline-meta">Module 13</p>
-            <p>The 14B student reached 84.34% under single-stage distillation, while extra GT SFT could make it worse, which means method design must respect the student's own baseline.</p>
-          </article>
-          <article class="timeline-card reveal">
-            <span class="time-range">Finding 3</span>
-            <h3>A larger test set shows the student can stably outperform the teacher</h3>
-            <p class="timeline-meta">Module 15</p>
-            <p>The 14B student reached an 88.67% three-seed mean and a best result of 89.10%, above the teacher's 87.18%, with only a 0.70pp range. That makes the result credible rather than just visually strong.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block section-plain">
-      <div class="shell">
-        <div class="section-head reveal">
-          <p class="eyebrow">What this says about me</p>
-          <h2>If I translate the thesis into role language, it proves three capability lines</h2>
-          <p class="section-text">That is why this page belongs on a resume website rather than staying only inside the thesis itself.</p>
-        </div>
-        <div class="career-proof-grid">
-          <article class="proof-card reveal">
-            <span class="proof-label">Experiment design</span>
-            <h3>I can turn a problem into a testable experiment path</h3>
-            <p>I do not start from a method and hope it works. I build baselines, comparisons, and validation logic first.</p>
-            <div class="proof-metric">17 modules</div>
-          </article>
-          <article class="proof-card reveal">
-            <span class="proof-label">Method judgment</span>
-            <h3>I can tell which method truly fits the task</h3>
-            <p>I do not automatically favor the most complex method. I ask whether the method matches the task structure itself.</p>
-            <div class="proof-metric">89.10% / 88.67%</div>
-          </article>
-          <article class="proof-card reveal">
-            <span class="proof-label">Result communication</span>
-            <h3>I can translate a technical result into a discussion-worthy conclusion</h3>
-            <p>Not only what the result is, but why it can be trusted, why it matters, and why it is worth continuing.</p>
-            <div class="proof-metric">Repeatable research path</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block section-accent">
-      <div class="shell">
-        <div class="section-head reveal">
-          <p class="eyebrow">Figures</p>
-          <h2>These four figures are the ones worth keeping</h2>
-          <p class="section-text">If someone does not want the full report, these four visuals are enough to understand the route, the method, and the result.</p>
-        </div>
-        <div class="research-figure-grid">
-          <figure class="figure-frame reveal">
-            <img src="../assets/research/fig_2_1_tech_route_overview.png" alt="Technical route overview">
-            <figcaption>Technical route overview from baseline and distillation to scaling and full-test validation.</figcaption>
+        <div class="research-figure-grid reveal">
+          <figure class="figure-frame">
+            <img src="../assets/research/fig_4_4_full_data_distill_results.png" alt="Full data distillation results">
+            <figcaption>14B student reached 89.10% on 991-question test set.</figcaption>
           </figure>
-          <figure class="figure-frame reveal">
-            <img src="../assets/research/fig_3_1_choice_head_pipeline.png" alt="Choice-Head distillation pipeline">
-            <figcaption>Choice-Head pipeline: constrain distillation to the A/B/C/D/E answer distribution.</figcaption>
-          </figure>
-          <figure class="figure-frame reveal">
-            <img src="../assets/research/fig_4_4_full_data_distill_results.png" alt="Full-data distillation results">
-            <figcaption>Full-data results: the 14B student reached 89.10% on the 991-question test set.</figcaption>
-          </figure>
-          <figure class="figure-frame reveal">
-            <img src="../assets/research/fig_4_5_overall_ranking.png" alt="Overall experiment ranking">
-            <figcaption>Overall ranking across modules and methods for quick comparison.</figcaption>
+          <figure class="figure-frame">
+            <img src="../assets/research/fig_3_1_choice_head_pipeline.png" alt="Choice-Head pipeline">
+            <figcaption>Choice-Head: distillation constrained to A/B/C/D/E option distributions.</figcaption>
           </figure>
         </div>
       </div>
@@ -248,22 +82,21 @@
 
   <footer class="site-footer">
     <div class="shell footer-shell">
-      <p>CHEN Tianyuan</p>
+      <p>© 2026 CHEN Tianyuan</p>
       <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="career.html">Career</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
-        <a href="https://github.com/arthaschan/mentalDistill" target="_blank" rel="noopener">mentalDistill</a>
       </div>
     </div>
   </footer>
 
   <div class="mobile-quickbar" aria-label="Mobile quick actions">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">Contact</a>
-    <a class="mobile-quickbar-primary" href="../陈天元pm.pdf" download>Resume</a>
+    <a href="index.html" data-nav="home">Home</a>
+    <a href="projects.html" data-nav="projects">Projects</a>
+    <a href="about.html" data-nav="about">Contact</a>
+    <a class="mobile-quickbar-primary" href="../陈天元pm.pdf" download>CV</a>
   </div>
 
   <script src="../js/site.js"></script>

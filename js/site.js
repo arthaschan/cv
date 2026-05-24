@@ -19,4 +19,8 @@ if (currentPage) {
   document.querySelectorAll("[data-nav]").forEach((link) => {
     link.classList.toggle("is-active", link.dataset.nav === currentPage);
   });
+
+  document.querySelectorAll(".mobile-quickbar a[data-nav]").forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.nav === currentPage);
+  });
 }
