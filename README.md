@@ -33,14 +33,12 @@ http://127.0.0.1:4173/index.html
 
 ## 发布到 GitHub Pages
 
-如果你准备把这个仓库发布到 GitHub Pages，建议按下面步骤做：
+本仓库的 Pages **构建方式为 GitHub Actions**（Settings → Pages → Source = GitHub Actions），
+由 `.github/workflows/pages.yml` 负责：推送到 `main` 即自动把仓库根目录发布上线，也可在
+Actions 页手动 `workflow_dispatch` 触发。
 
-1. 把当前目录初始化并推送到 GitHub 仓库
-2. 确保默认分支为 main
-3. 进入 GitHub 仓库 Settings → Pages
-4. Source 选择 Deploy from a branch
-5. Branch 选择 main，Folder 选择 /(root)
-6. 保存后等待 GitHub Pages 完成部署
+> 注意：仓库如果缺 `.github/workflows/pages.yml`，在 Source = GitHub Actions 的设置下
+> **推送不会触发任何部署**，线上会一直停留在上一次成功部署的版本。
 
 当前仓库已经补齐这些 Pages 配套文件：
 
