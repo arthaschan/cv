@@ -1574,3 +1574,99 @@ img {
     padding: 22px 22px 24px;
   }
 }
+
+/* ── Contact QR pair (FDE page) ── */
+.qr-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: stretch;
+  margin-top: 26px;
+}
+
+.qr-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--glass);
+}
+
+.qr-card img {
+  width: 132px;
+  height: 132px;
+  flex: 0 0 132px;
+  padding: 7px;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.qr-card--lg img {
+  width: 168px;
+  height: 168px;
+  flex-basis: 168px;
+}
+
+.qr-card-text b {
+  display: block;
+  color: var(--sand);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.qr-card-text span {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.qr-card-text .qr-tip {
+  color: var(--gold2);
+  font-weight: 600;
+}
+
+.qr-card-text .qr-id {
+  margin-top: 8px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.82rem;
+  color: var(--sand2);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 860px) {
+  .qr-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-card,
+  .qr-card--lg {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .qr-card img,
+  .qr-card--lg img {
+    width: 132px;
+    height: 132px;
+    flex-basis: 132px;
+  }
+}
+
+@media (max-width: 420px) {
+  .qr-card,
+  .qr-card--lg {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .qr-card img,
+  .qr-card--lg img {
+    width: 190px;
+    height: 190px;
+    flex-basis: auto;
+  }
+}
