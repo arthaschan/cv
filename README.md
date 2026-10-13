@@ -5,6 +5,7 @@
 - 首页：index.html
 - 职业档案：career.html
 - 项目与案例：projects.html
+- FDE 名片：fde.html
 - 论文研究：research.html
 - 关于我：about.html
 

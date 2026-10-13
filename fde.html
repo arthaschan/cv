@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陈天元 | FDE · AI 落地交付</title>
+  <meta name="description" content="陈天元，Forward Deployed Engineer：20+ 年软件工程、6 年带 50 人团队交付、应用人工智能硕士。把 AI 从一句模糊需求做到客户机房里跑得起来的系统。香港 IANG 已获批，雇主无需担保。">
+  <meta property="og:title" content="陈天元 | FDE · AI 落地交付">
+  <meta property="og:description" content="AI 落地最后一公里：需求梳理 → 模型落地 → 离线部署 → 验收交付，一个人走完全程。">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="assets/img/portrait.png">
+  <meta name="twitter:title" content="陈天元 | FDE · AI 落地交付">
+  <meta name="twitter:description" content="Forward Deployed Engineer，7 个模型进生产环境，专做离线与算力受限场景的 AI 交付。">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body data-page="fde">
+  <nav class="site-nav">
+    <div class="shell nav-shell">
+      <a class="brand" href="index.html">CTY</a>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="career.html" data-nav="career">职业档案</a>
+        <a href="projects.html" data-nav="projects">项目案例</a>
+        <a href="fde.html" data-nav="fde">FDE</a>
+        <a href="research.html" data-nav="research">研究</a>
+        <a href="about.html" data-nav="about">关于我</a>
+      </div>
+      <div class="lang-switch" aria-label="语言切换">
+        <a class="is-current" href="fde.html">中文</a>
+        <a href="en/fde.html">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-panel hero-fde">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-noise"></div>
+    <div class="shell hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Forward Deployed Engineer · AI 落地最后一公里</p>
+        <div class="name-lockup">
+          <h1>陈天元</h1>
+          <p class="hero-roman">CHEN Tianyuan</p>
+        </div>
+        <p class="lead">二十年软件工程，六年带团队交付。这两年我只做一件事 —— <strong>让 AI 真的跑在客户的机房里</strong>：从把一句模糊需求拆成能验收的任务，到在无外网的 GPU 节点上把模型服务起来，再到验收交付，一个人走完全程。</p>
+        <div class="signal-row">
+          <span class="signal-pill cyan">Open to Work</span>
+          <span class="signal-pill">香港 IANG 已获批</span>
+          <span class="signal-pill">7 个模型上生产</span>
+          <span class="signal-pill">应用人工智能硕士</span>
+        </div>
+        <div class="hero-statbar">
+          <div class="stat-chip">
+            <strong>7</strong>
+            <span>模型进生产环境</span>
+          </div>
+          <div class="stat-chip">
+            <strong>50 人</strong>
+            <span>团队管理规模</span>
+          </div>
+          <div class="stat-chip">
+            <strong>6 次</strong>
+            <span>质量排名第 1</span>
+          </div>
+          <div class="stat-chip">
+            <strong>20+ / 6</strong>
+            <span>工程 / 带队年数</span>
+          </div>
+        </div>
+        <div class="fde-idrow">
+          <div class="fde-id">
+            <span class="fde-id-k">网</span>
+            <div>
+              <b>个人站</b>
+              <span>arthaschan.github.io/cv</span>
+            </div>
+          </div>
+          <div class="fde-id">
+            <span class="fde-id-k">微</span>
+            <div>
+              <b>微信</b>
+              <span>arthas0506</span>
+            </div>
+          </div>
+          <div class="fde-id">
+            <span class="fde-id-k">邮</span>
+            <div>
+              <b>邮箱</b>
+              <span>arthas0506@gmail.com</span>
+            </div>
+          </div>
+          <div class="fde-id">
+            <span class="fde-id-k">地</span>
+            <div>
+              <b>常驻</b>
+              <span>香港（香港工作许可：IANG 已获批）</span>
+            </div>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a class="button button-primary" href="陈天元_FDE简历_中文版.pdf" download>下载 FDE 简历（中文）</a>
+          <a class="button button-secondary" href="CHEN_Tianyuan_FDE_Resume_HK.pdf" download>FDE Resume (EN)</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <img src="assets/img/portrait.png" alt="陈天元">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Positioning</p>
+          <h2>这个角色最难的不是模型，是另外三件事</h2>
+          <p class="section-text">客户说不清自己到底要什么；现场环境比实验室恶劣得多 —— 没有外网、算力受限、数据不许出机房；而交付日期是钉死的。我把这三件事接住，就是我理解的 FDE。</p>
+        </div>
+        <div class="wave-divider"></div>
+        <p class="note reveal">我的定位是<strong>用业务能听懂的话，把 AI 做成能在现场活下来的系统</strong>。做不成的场景我会直接说做不成，能做的我会给出可验收的边界和时间。</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Identity</p>
+          <h2>主要身份</h2>
+        </div>
+        <div class="card-grid cols-3">
+          <article class="feature-card reveal">
+            <span class="tag">Now</span>
+            <h3>FDE · 独立技术交付顾问</h3>
+            <p>端到端负责 AI 系统的交付：需求梳理 → 架构设计 → 训练与压缩 → 离线部署 → 验收交付。现居香港，接受客户现场驻场与大湾区、亚太范围出差。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="tag">Applied AI</span>
+            <h3>应用人工智能硕士</h3>
+            <p>香港珠海学院。硕士论文研究医学选择题的知识蒸馏：14B 学生模型在 991 题测试集上达到 89.10% 准确率，完整实验链路与代码开源。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="tag">Delivery</span>
+            <h3>前高级项目经理 · 华为商城</h3>
+            <p>中软国际（ICSS）六年，交付并运维华为商城客服子系统，带最多 50 人多团队。2021 年推动 AMS 团队 6 次质量排名第 1。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Track Record</p>
+          <h2>我做过什么</h2>
+          <p class="section-text">从大厂复杂系统交付，到一个人把 AI 项目从需求做到生产环境。</p>
+        </div>
+        <div class="timeline reveal">
+          <article class="tl-item">
+            <p class="tl-period">2026 — 至今 · 香港 / 内地</p>
+            <h3>FDE · 独立技术交付顾问</h3>
+            <p class="tl-org">AI 落地交付 · GPU 与模型服务部署 · 企业 AI 应用</p>
+            <p class="tl-desc">担任某国家级基础设施项目 AI 优化平台的 AI 层唯一交付人（客户名涉 NDA）：把学术算法转化为 7 个生产模型，覆盖预测、排产、优化与异常检测；在无外网的 NVIDIA H20 节点上从零搭起离线 GPU 推理环境（驱动与容器运行时、vLLM 服务化、节点与服务监控）；用压缩与量化把模型塞进现场硬件限制；编写测试计划、验收证据与专家评审答疑材料，项目一次通过专家评审。另自建 H100 推理实验环境，以 vLLM 服务 32B 模型并把可用上下文扩到 64K。同期为跨境电商客户交付 LLM + RAG 助手（商品上架、客服、数据分析），为企业微信场景交付本地化 RAG 知识库与流程助手。</p>
+          </article>
+          <article class="tl-item">
+            <p class="tl-period">2019 — 2025</p>
+            <h3>高级项目经理 / 技术负责人</h3>
+            <p class="tl-org">中软国际（ICSS）· 华为商城 VMALL · 最多 50 人</p>
+            <p class="tl-desc">交付并运维华为商城客服子系统，技术栈 Spring Boot / MySQL 读写分离 / Redis Cluster / RocketMQ。直接负责性能与稳定性：JVM 与 SQL 调优、缓存穿透与雪崩防护、大促高并发容量设计。管理多团队最多 50 人，负责交付质量、QA 与招聘培训；代表电商业务线做 3 次技术分享。</p>
+          </article>
+          <article class="tl-item">
+            <p class="tl-period">2025 — 2026</p>
+            <h3>应用人工智能硕士</h3>
+            <p class="tl-org">香港珠海学院</p>
+            <p class="tl-desc">论文聚焦医学选择题知识蒸馏，最佳学生模型在 991 题测试集达到 89.10% 准确率。</p>
+          </article>
+          <article class="tl-item">
+            <p class="tl-period">2002 — 2006</p>
+            <h3>信息与计算科学本科</h3>
+            <p class="tl-org">武汉科技大学</p>
+            <p class="tl-desc">数学与计算基础，之后一直在软件工程与交付现场。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Method</p>
+          <h2>我怎么交付一个 AI 项目</h2>
+          <p class="section-text">这是我在现场反复验证过的五步，顺序不能换。</p>
+        </div>
+        <div class="wave-divider"></div>
+        <div class="fde-steps reveal">
+          <div class="fde-step">
+            <span class="fde-step-no">STEP 01</span>
+            <h4>定方向</h4>
+            <p>先和客户、算法团队坐到一起，把「这次只解决哪一个问题」和「怎么算成功」说死，避免后面无休止的返工。</p>
+          </div>
+          <div class="fde-step">
+            <span class="fde-step-no">STEP 02</span>
+            <h4>拆边界</h4>
+            <p>把一段模糊需求拆成可独立部署的模块，每个模块有负责人、接口和验收标准 —— 这一步决定了项目能不能被管理。</p>
+          </div>
+          <div class="fde-step">
+            <span class="fde-step-no">STEP 03</span>
+            <h4>跑通最小闭环</h4>
+            <p>几天内在客户的真实数据上跑通一条端到端细线，先拿到反馈，再谈加固。不要在没验证的假设上做工程。</p>
+          </div>
+          <div class="fde-step">
+            <span class="fde-step-no">STEP 04</span>
+            <h4>加固到能用</h4>
+            <p>量化压缩、离线打包、监控与失效处理、容量调优 —— 这些是决定系统在现场能不能活下来的部分。</p>
+          </div>
+          <div class="fde-step">
+            <span class="fde-step-no">STEP 05</span>
+            <h4>交付与验收</h4>
+            <p>验收证据、审计文档、培训与交接，以及专家评审的答疑支持。交付的标准是客户自己能接手，不是我能跑。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I Do</p>
+          <h2>我能提供什么</h2>
+        </div>
+        <div class="fde-svc-grid reveal">
+          <article class="fde-svc">
+            <div class="fde-svc-no">01</div>
+            <div>
+              <h3>AI 落地交付（FDE）</h3>
+              <p>从需求梳理到上线验收的端到端交付，尤其适应<strong>离线、算力受限、数据不许出机房</strong>的现场环境。</p>
+              <ul>
+                <li>需求发现与模糊需求拆解</li>
+                <li>算法 → 生产模型的工程化</li>
+                <li>UAT、验收证据与专家评审支持</li>
+              </ul>
+            </div>
+          </article>
+          <article class="fde-svc">
+            <div class="fde-svc-no">02</div>
+            <div>
+              <h3>GPU 与模型服务部署</h3>
+              <p>把推理环境从零搭到能用，包括完全没有外部软件源可用的私有化场景。</p>
+              <ul>
+                <li>H100 / H20 服务器 bring-up 与驱动、容器运行时</li>
+                <li>vLLM 服务化、离线安装、节点与服务监控</li>
+                <li>量化压缩与推理延迟优化</li>
+              </ul>
+            </div>
+          </article>
+          <article class="fde-svc">
+            <div class="fde-svc-no">03</div>
+            <div>
+              <h3>AI 应用与 Agent 落地</h3>
+              <p>面向具体业务场景的 AI 应用，从诊断到上线切换与员工培训。</p>
+              <ul>
+                <li>RAG 知识库与智能检索问答</li>
+                <li>LLM 客服与工单自动化（含企业微信集成）</li>
+                <li>本地化 / 私有化部署，数据不出内网</li>
+              </ul>
+            </div>
+          </article>
+          <article class="fde-svc">
+            <div class="fde-svc-no">04</div>
+            <div>
+              <h3>GEO · 生成式引擎优化</h3>
+              <p>让客户在 AI 搜索与生成式答案里被<strong>正确引用</strong>，而不只是被检索到。面向外贸与教育行业，目前有 2 家种子客户在陪跑。</p>
+              <ul>
+                <li>内容资产梳理与结构化</li>
+                <li>自建站 + 中英文内容矩阵</li>
+                <li>可验证的引用与曝光监测</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Looking For</p>
+          <h2>我正在寻找什么</h2>
+          <p class="section-text">三件事，按优先级排列。会后直接找我，比在群里等回复快。</p>
+        </div>
+        <div class="wave-divider"></div>
+        <div class="fde-look reveal">
+          <article class="fde-look-item">
+            <span class="fde-look-mark">◆</span>
+            <div>
+              <h3>香港的 AI 交付 / FDE / AI 工程岗位</h3>
+              <p>全职优先。持香港 IANG 签证（<strong>已获批，居留 24 个月</strong>），<strong>雇主无需办理工作签证担保，可立即入职</strong>。期望月薪 HKD 40,000–44,999，可按岗位职级讨论 —— 我更在意团队是不是真在做落地，而不是挂着 AI 名字的泛 IT 岗。</p>
+              <div class="tags">
+                <span>AI Engineer</span>
+                <span>FDE</span>
+                <span>AI 交付 / 解决方案</span>
+                <span>技术顾问</span>
+                <span>驻场交付</span>
+              </div>
+            </div>
+          </article>
+          <article class="fde-look-item">
+            <span class="fde-look-mark">◆</span>
+            <div>
+              <h3>AI 落地项目合作与顾问陪跑</h3>
+              <p>跨境电商、教育、外贸、法律合规等场景的企业 AI 落地。可以做单点诊断（先判断这事到底能不能做、值不值得做），也可以做长周期陪跑：业务翻译 → 技术编排 → 落地工程 → 结果治理。项目制、顾问制、按阶段结算都可以谈。</p>
+              <div class="tags">
+                <span>项目制交付</span>
+                <span>顾问 / 陪跑</span>
+                <span>私有化部署</span>
+                <span>GEO</span>
+              </div>
+            </div>
+          </article>
+          <article class="fde-look-item">
+            <span class="fde-look-mark">◆</span>
+            <div>
+              <h3>FDE 同行交流与方法论共建</h3>
+              <p>尤其想交流三件事：香港与内地在 AI 落地上的差异、私有化 / 信创环境下的部署经验、以及 FDE 的交付标准与验收口径该怎么定。也欢迎拿真实案例来互评 —— 我更相信案例，不相信方法论 PPT。</p>
+              <div class="tags">
+                <span>同行交流</span>
+                <span>案例互评</span>
+                <span>验收标准</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>欢迎会后直接找我</h2>
+          <p class="section-text">加微信请备注「FDE」。如果你手上正好有个「看起来能做但没人敢接」的 AI 需求，欢迎直接聊 —— 判断能不能做，不收费。</p>
+        </div>
+        <div class="contact-grid reveal">
+          <article class="contact-card">
+            <span class="contact-icon">@</span>
+            <div>
+              <span class="contact-label">邮箱</span>
+              <div class="contact-val">arthas0506@gmail.com</div>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span class="contact-icon">微</span>
+            <div>
+              <span class="contact-label">微信</span>
+              <div class="contact-val">arthas0506</div>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span class="contact-icon">HK</span>
+            <div>
+              <span class="contact-label">香港手机</span>
+              <div class="contact-val">46239062</div>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span class="contact-icon">CN</span>
+            <div>
+              <span class="contact-label">大陆手机</span>
+              <div class="contact-val">15323724169</div>
+            </div>
+          </article>
+        </div>
+        <div class="cta-row reveal">
+          <a class="button button-primary" href="陈天元_FDE简历_中文版.pdf" download>下载 FDE 简历（中文）</a>
+          <a class="button button-secondary" href="CHEN_Tianyuan_FDE_Resume_HK.pdf" download>FDE Resume (EN)</a>
+          <a class="button button-secondary" href="projects.html">查看项目案例</a>
+        </div>
+        <div class="qr-preview reveal">
+          <img src="assets/qr/site-qr.png" alt="个人网站二维码">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <p class="note reveal">项目细节按客户保密要求做了脱敏处理，客户与项目名称按要求隐去；技术架构与交付做法可在交流时详细展开。语言能力：普通话（母语）· 粤语（简单沟通）· 英语（简单沟通）。认证：PMP · CSM · CET-6。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <p>© 2026 陈天元 · CHEN Tianyuan</p>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="career.html">职业档案</a>
+        <a href="projects.html">项目案例</a>
+        <a href="research.html">研究</a>
+        <a href="陈天元_FDE简历_中文版.pdf">FDE 简历</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-quickbar" aria-label="移动端快捷操作">
+    <a href="index.html" data-nav="home">首页</a>
+    <a href="projects.html" data-nav="projects">项目</a>
+    <a href="about.html" data-nav="about">联系</a>
+    <a class="mobile-quickbar-primary" href="陈天元_FDE简历_中文版.pdf" download>简历</a>
+  </div>
+
+  <script src="js/site.js"></script>
+</body>
+
+</html>
